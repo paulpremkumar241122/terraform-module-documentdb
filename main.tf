@@ -30,7 +30,6 @@ resource "aws_security_group" "sg" {
   }
 }
 
-
 resource "aws_docdb_cluster" "main" {
   cluster_identifier      = "${var.component}-${var.env}"
   engine                  = var.engine
